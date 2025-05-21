@@ -74,10 +74,13 @@
 }
 
 body { 
-    font-family: Arial, sans-serif; 
+    font-family: 'Lato', sans-serif; 
     margin: 0; 
     padding: 0; 
-    background-color: #fff6fa;
+    background-color: #ffeaf2;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
 header {
     background-color: #fffcf8;
@@ -106,7 +109,7 @@ nav a {
 .hero p {
     color: #655274;
 }
-.section { 
+#terapia, #sintomas, #sobre, #perguntas, #depoimentos { 
     padding: 40px; 
 }
 footer {
@@ -177,36 +180,36 @@ section#sobre p {
 .sobre-imagem {
     flex-shrink: 0;
 }
-.tcc-section {
+.psih-section {
   background-color: #fffcf8;
-  color: black;
+  color: #655274;
   padding: 60px 20px;
 }
 
-.tcc-content {
+.psih-content {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.tcc-texto .subtitulo {
+.psih-texto .subtitulo {
   letter-spacing: 4px;
   font-size: 14px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.tcc-texto h2 {
+.psih-texto h2 {
   font-size: 28px;
   margin: 10px 0;
   line-height: 1.4;
 }
 
-.tcc-texto .descricao {
+.psih-texto .descricao {
   font-size: 14px;
   margin-top: 15px;
 }
 
-.tcc-itens {
+.psih-itens {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -222,9 +225,9 @@ section#sobre p {
 .item .numero {
   font-size: 100px;
   font-weight: bold;
-  color: black;
+  color: #655274;
   opacity: 0.9;
-  border-top: 2px solid black;
+  border-top: 2px solid #655274;
   padding-top: 20px;
 }
 
