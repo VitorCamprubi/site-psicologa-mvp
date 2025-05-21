@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Bianca Munhoz | Psicóloga Online</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -19,12 +20,14 @@
             </ul>
         </nav>
     </header>
-    <div class="hero">
-        <h1>Transforme suas dores em crescimento.</h1>
-        <p>Como psicóloga humanista, ajudo adolescentes, adultos e idosos a enfrentar os desafios do presente, compreendendo como as vivências passadas influenciam suas emoções e comportamentos atuais. Juntos, trabalhamos para fortalecer habilidades que promovem o bem-estar no agora e auxiliam no enfrentamento da ansiedade em relação ao futuro.</p>
-        <p>Clique no botão abaixo para saber mais e cuidar da sua saúde emocional.</p>
-        <a class="btn-whatsapp" href="https://w.app/w5xytc" target="_blank">Agende sua consulta!</a>
-    </div>
+    <section id="inicio" class="section">
+        <div class="hero">
+            <h1>Transforme suas dores em crescimento.</h1>
+            <p>Como psicóloga humanista, ajudo adolescentes, adultos e idosos a enfrentar os desafios do presente, compreendendo como as vivências passadas influenciam suas emoções e comportamentos atuais. Juntos, trabalhamos para fortalecer habilidades que promovem o bem-estar no agora e auxiliam no enfrentamento da ansiedade em relação ao futuro.</p>
+            <p>Clique no botão abaixo para saber mais e cuidar da sua saúde emocional.</p>
+            <a class="btn-whatsapp" href="https://w.app/w5xytc" target="_blank">Agende sua consulta!</a>
+        </div>
+    </section>
     <section id="terapia" class="section">
         <h2>A terapia é um processo que acontece em 4 etapas:</h2>
             <ul>
@@ -35,9 +38,8 @@
             </ul>
     </section>
     <section id="sintomas" class="section">
-        <h2>Sintomas</h2>
-        <p>É bem provável que você se identifique com essa realidade:</p>
-        <div class="lista1">
+        <h2>É bem provável que você se identifique com essa realidade:</h2>
+        <div class="lista">
             <div class="item">
                 <h3>Autocobrança</h3> 
                 <p>Dificuldade em reconhecer suas conquistas, sempre sentindo que precisa fazer mais e melhor.</p>
@@ -54,8 +56,6 @@
                 <h3>Dependência emocional</h3> 
                 <p>Dificuldade em se sentir seguro(a) sozinho(a), sempre buscando validação externa.</p>
             </div>
-        </div>
-        <div class="lista2">
             <div class="item">
                 <h3>Depressão</h3> 
                 <p>Sentimento persistente de tristeza, desmotivação e perda de interesse nas atividades cotidianas.</p>
@@ -75,20 +75,53 @@
         </div>
     </section>
     <section id="sobre" class="section">
-        <h2>Sobre Mim</h2>
-        <h2>
-            Bianca Munhoz
-            <br>
-            Psicóloga CRP16/7662
-        </h2>
-            <br>
-            <p>Me formei em 2019, em São Paulo, e antes de migrar definitivamente para a Psicologia Clínica, atuei por bastante tempo na área de Recursos Humanos. Durante esse período, trabalhei com treinamento e desenvolvimento, aplicação de testes psicológicos, avaliações de desempenho e promoção da evolução dos colaboradores.</p>
-            <p>Também participei de treinamentos voltados para o desenvolvimento de liderança e ministrei capacitações sobre comunicação e oratória, sempre buscando aprimorar habilidades interpessoais e profissionais.</p>
-            <p>Em 2021, finalizei minhas pós-graduações em Psicologia Humanista e Psicologia Organizacional. A partir daí, migrei para a Psicologia Clínica, onde atualmente realizo intervenções com adolescentes, adultos e idosos, sempre com foco no bem-estar e no enfrentamento da dor e do sofrimento.</p>
-            <p>Minha abordagem é baseada na Psicologia Humanista de Carl Rogers, promovendo a autonomia, a valorização das escolhas e o acolhimento genuíno como pilares do processo terapêutico.</p>
-            <p>Tenho extensões em Neuropsicologia Forense, Saúde Mental e Psicologia Educacional, áreas nas quais já atuei em diferentes contextos. Atualmente, estou me especializando em Psicologia do Esporte, com foco na autorregulação emocional diante de competições.</p>
-            <p>Costumo dizer que a Psicologia não foi uma escolha, mas sim uma missão. Estar à frente da escuta e do acolhimento me transforma a cada dia. A busca pela nossa troca é mútua, leve e o vínculo é natural. Gosto de trabalhar nessa base para reforçar que somos todos seres humanos e aprendemos juntos.</p>
+        <div>
+            <h2>Sobre Mim</h2>
+            <h2>
+                Bianca Munhoz
+                <br>
+                Psicóloga CRP16/7662
+            </h2>
+                <br>
+                <p>Me formei em 2019, em São Paulo, e antes de migrar definitivamente para a Psicologia Clínica, atuei por bastante tempo na área de Recursos Humanos. Durante esse período, trabalhei com treinamento e desenvolvimento, aplicação de testes psicológicos, avaliações de desempenho e promoção da evolução dos colaboradores.</p>
+                <p>Também participei de treinamentos voltados para o desenvolvimento de liderança e ministrei capacitações sobre comunicação e oratória, sempre buscando aprimorar habilidades interpessoais e profissionais.</p>
+                <p>Em 2021, finalizei minhas pós-graduações em Psicologia Humanista e Psicologia Organizacional. A partir daí, migrei para a Psicologia Clínica, onde atualmente realizo intervenções com adolescentes, adultos e idosos, sempre com foco no bem-estar e no enfrentamento da dor e do sofrimento.</p>
+                <p>Minha abordagem é baseada na Psicologia Humanista de Carl Rogers, promovendo a autonomia, a valorização das escolhas e o acolhimento genuíno como pilares do processo terapêutico.</p>
+                <p>Tenho extensões em Neuropsicologia Forense, Saúde Mental e Psicologia Educacional, áreas nas quais já atuei em diferentes contextos. Atualmente, estou me especializando em Psicologia do Esporte, com foco na autorregulação emocional diante de competições.</p>
+                <p>Costumo dizer que a Psicologia não foi uma escolha, mas sim uma missão. Estar à frente da escuta e do acolhimento me transforma a cada dia. A busca pela nossa troca é mútua, leve e o vínculo é natural. Gosto de trabalhar nessa base para reforçar que somos todos seres humanos e aprendemos juntos.</p>
+        </div>
     </section>
+    <section class="tcc-section">
+    <div class="tcc-content">
+      <div class="tcc-texto">
+        <p class="subtitulo">SOBRE A TCC</p>
+        <h2>
+          A <strong>Terapia Cognitivo Comportamental</strong> tem como base de intervenção os aspectos:
+        </h2>
+        <p class="descricao">
+          A <strong>Terapia Cognitivo Comportamental</strong> é a abordagem com maior número de evidências científicas para os tratamentos emocionais
+        </p>
+      </div>
+
+      <div class="tcc-itens">
+        <div class="item">
+          <div class="numero">01</div>
+          <h3>PENSAMENTO</h3>
+          <p>O que você pensa determina como você vai se sentir. Por isso, o foco na TCC é tornar seus pensamentos mais reais possíveis para assim diminuir seu sofrimento.</p>
+        </div>
+        <div class="item">
+          <div class="numero">02</div>
+          <h3>EMOÇÃO</h3>
+          <p>Seu estado emocional diz como você vai se comportar. Aprender a regular suas emoções é essencial para reduzir comportamentos indesejados.</p>
+        </div>
+        <div class="item">
+          <div class="numero">03</div>
+          <h3>COMPORTAMENTO</h3>
+          <p>A intervenção na TCC foca em alinhar seu comportamento para que esteja de acordo com a vida que você deseja viver, encontrando plenitude.</p>
+        </div>
+      </div>
+    </div>
+  </section>
     <section id="perguntas" class="section">
         <h2>Perguntas Frequentes</h2>
         <p>Descrição dos serviços oferecidos.</p>
@@ -100,15 +133,5 @@
     <footer>
         <p>&copy; 2025 - Todos os direitos reservados</p>
     </footer>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
