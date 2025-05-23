@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #sintomas h2 {
     color: #655274;
     justify-content: center;
@@ -118,6 +122,7 @@ footer {
     text-align: center; 
     padding: 20px; 
 }
+
 .btn-whatsapp { 
     display: inline-block;
     background-color: #e4a29f; 
@@ -216,6 +221,13 @@ section#sobre p {
   gap: 30px;
 }
 
+.section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .item {
   flex: 1;
   min-width: 250px;
@@ -242,3 +254,68 @@ section#sobre p {
   line-height: 1.5;
 }
 
+/* Para dispositivos com largura menor que 768px (celulares) */
+@media (max-width: 768px) {
+  .lista {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item {
+    max-width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  section#sobre {
+    padding: 1%;
+  }
+
+  section#sobre div {
+    width: 75%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .btn-whatsapp {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+
+  .psih-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .psih-itens .item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .item {
+    flex: 1 1 100%;
+  }
+
+  #terapia h2, #terapia li {
+    text-align: left;
+    font-size: 1em;
+  }
+}
