@@ -86,11 +86,43 @@ body {
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
+/* Estilo geral */
 header {
     background-color: #fffcf8;
-    padding: 20px; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* espaço entre logo e menu */
+  width: 100%;
+  margin: 0 auto;
+}
+
+#divlogo {
+  max-width: 150px;
+}
+
+#imglogo {
+  width: 100%;
+  height: auto;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #655274;
+}
+
 nav ul { 
     list-style: none; 
     display: flex; 
@@ -102,6 +134,57 @@ nav a {
     color: #655274; 
     font-weight: bold; 
 }
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #655274;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #655274;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+  transform: scaleX(1);
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+    }
+
+    nav ul.show {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
 .hero { 
     padding: 50px; 
     text-align: center; 
