@@ -2,6 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.section-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffcf8;
+  padding: 60px 20px;
+  gap: 20px;
+}
+.hero, .hero-img {
+  flex: 1 1 400px;
+}
+.hero-img img {
+  width:100%; height:auto;
+}
+@media (max-width:768px) {
+  .hero-sessao { flex-direction: column; }
+  .hero-imagem, .hero-conteudo { width:90%; }
+}
 #sintomas h2 {
     color: #655274;
     justify-content: center;
@@ -102,11 +121,12 @@ nav {
   align-items: center;
   justify-content: center; /* espaço entre logo e menu */
   width: 100%;
-  margin: 0 auto;
 }
 
 #divlogo {
-  max-width: 150px;
+  max-width: 200px;
+  margin: 20px;
+
 }
 
 #imglogo {
@@ -163,6 +183,20 @@ nav ul li a:focus::after {
 @media (max-width: 768px) {
     #menu-toggle {
         display: block;
+        
+    }
+    #divlogo {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    nav {
+      width: 20%;
+    }
+
+    #imglogo {
+      width: 40%;
+      height: auto;
     }
 
     nav ul {
