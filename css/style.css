@@ -9,7 +9,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffeaf2;
+  background-color: #fffcf8;
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
@@ -121,9 +121,15 @@ nav ul li a:focus::after {
 
 /* ==================== SEÇÃO TERAPIA ==================== */
 #terapia {
-  max-width: 800px;
-  margin: auto;
-  padding: 40px;
+  max-width: 100%;
+  margin: 0;
+  background-color: #ffeaf2;
+}
+.padding-cor {
+  background-color: #ffeaf2;
+  padding-left: 25%;
+  padding-right: 25%;
+  width: 100%;
 }
 #terapia h2 {
   font-size: 1.5em;
@@ -135,9 +141,9 @@ nav ul li a:focus::after {
   padding: 0;
 }
 #terapia li {
-  margin: 10px 0;
+  margin: 30px 0;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: .5;
   color: #655274;
 }
 #terapia li h3 {
@@ -154,8 +160,12 @@ nav ul li a:focus::after {
 
 /* ==================== SEÇÃO SINTOMAS ==================== */
 #sintomas h2 {
+  font-size: 1.5em;
   color: #655274;
   text-align: center;
+}
+#sintomas {
+  background-color: #fffcf8;
 }
 .lista {
   display: flex;
@@ -170,7 +180,7 @@ nav ul li a:focus::after {
   flex: 1 1 300px;
   max-width: 300px;
   padding: 20px;
-  border: 2px solid #ecb8a3;
+  border: 3px solid #ecb8a3;
   border-radius: 20px;
   text-align: center;
   display: flex;
@@ -178,13 +188,13 @@ nav ul li a:focus::after {
   justify-content: space-between;
 }
 .item h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
   margin-bottom: 10px;
   color: #655274;
 }
 .item p {
-  font-size: 0.9em;
+  font-size: 1.em;
   color: #655274;
 }
 
@@ -193,11 +203,16 @@ section#sobre {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
   gap: 30px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
-section#sobre div {
-  width: 50%;
+.sobre-cor {
+  background-color: #ffeaf2;
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 section#sobre h2 {
   font-size: 1.5rem;
