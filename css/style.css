@@ -1,166 +1,72 @@
-html {
-  scroll-behavior: smooth;
-}
-
-.section-hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: #fffcf8;
-  padding: 60px 20px;
-  gap: 20px;
-}
-.hero, .hero-img {
-  flex: 1 1 400px;
-}
-.hero-img img {
-  width:100%; height:auto;
-}
-@media (max-width:768px) {
-  .hero-sessao { flex-direction: column; }
-  .hero-imagem, .hero-conteudo { width:90%; }
-}
-#sintomas h2 {
-    color: #655274;
-    justify-content: center;
-    text-align: center; 
-}
+/* ==================== RESET E BASE ==================== */
 * {
   box-sizing: border-box;
 }
-
-.lista { 
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+html {
+  scroll-behavior: smooth;
 }
-
-.item { 
-  flex: 1 1 300px;
-  max-width: 300px;
-  min-height: 100px;
-  padding: 20px; 
-  border: 2px solid #ecb8a3; 
-  border-radius: 20px; 
-  text-align: center; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.item h3 { 
-    font-size: 1.2em; 
-    font-weight: bold; 
-    margin-bottom: 10px; 
-    color: #655274;
-}
-.item p { 
-    font-size: 0.9em; 
-    color: #655274; 
-}
-
-#terapia { 
-    max-width: 800px; 
-    margin: auto; 
-    padding: 20px; 
-}
-#terapia h2 { 
-    font-size: 1.5em; 
-    color: #655274; 
-    text-align: left; 
-}
-#terapia ul { 
-    list-style: none; 
-    padding: 0; 
-}
-#terapia li {
-    margin: 10px 0; 
-    font-size: 1em; 
-    line-height: 1.6; 
-    color: #655274;
-}
-#terapia li h3 { 
-    display: inline-block; 
-    font-weight: bold; 
-    color: #655274; 
-    margin-right: 5px; 
-}
-#terapia li::before { 
-    content: '— '; 
-    color: #655274; 
-    font-weight: bold; 
-}
-
-body { 
-    font-family: 'Lato', sans-serif; 
-    margin: 0; 
-    padding: 0; 
-    background-color: #ffeaf2;
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffeaf2;
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
-/* Estilo geral */
-header {
-    background-color: #fffcf8;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
 
+/* ==================== HEADER E NAVBAR ==================== */
+header {
+  background-color: #fffcf8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#divlogo {
+  width: 30%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+#imglogo {
+  width: 70%;
+  height: auto;
+}
+#divnav {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
 nav {
   display: flex;
   align-items: center;
 }
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* espaço entre logo e menu */
-  width: 100%;
-}
-
-#divlogo {
-  max-width: 200px;
-  margin: 20px;
-
-}
-
-#imglogo {
-  width: 100%;
-  height: auto;
-}
-
 #menu-toggle {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #655274;
-}
-
-nav ul { 
-    list-style: none; 
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-}
-nav a { 
-    text-decoration: none; 
-    color: #655274; 
-    font-weight: bold; 
-}
-
-nav ul li a {
-  position: relative;
-  text-decoration: none;
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
   color: #655274;
 }
-
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #655274;
+  font-weight: bold;
+}
+nav ul li a {
+  position: relative;
+}
 nav ul li a::after {
   content: '';
   position: absolute;
@@ -173,184 +79,170 @@ nav ul li a::after {
   transform-origin: center;
   transition: transform 0.3s ease;
 }
-
 nav ul li a:hover::after,
 nav ul li a:focus::after {
   transform: scaleX(1);
 }
 
-/* Responsivo para mobile */
-@media (max-width: 768px) {
-    #menu-toggle {
-        display: block;
-        
-    }
-    #divlogo {
-        max-width: 100%;
-        margin: 10px;
-    }
-
-    nav {
-      width: 20%;
-    }
-
-    #imglogo {
-      width: 40%;
-      height: auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        overflow: hidden;
-        max-height: 0;
-        opacity: 0;
-    }
-
-    nav ul.show {
-        max-height: 500px;
-        opacity: 1;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
+/* ==================== HERO ==================== */
+.section-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffcf8;
+  gap: 20px;
 }
-
-.hero { 
-    padding: 50px; 
-    text-align: center; 
-    background-color: #fffcf8; 
+.hero, .hero-img {
+  flex: 1 1 400px;
 }
-.hero h1 {
-    color: #655274;
+.hero {
+  padding: 50px;
+  text-align: center;
+  background-color: #fffcf8;
 }
+.hero h1,
 .hero p {
-    color: #655274;
+  color: #655274;
 }
-#terapia, #sintomas, #sobre, #perguntas, #depoimentos { 
-    padding: 40px; 
+.hero-img img {
+  width: 100%;
+  height: auto;
 }
-footer {
-    background-color: #333; 
-    color: #fff; 
-    text-align: center; 
-    padding: 20px; 
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #e4a29f;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.btn-whatsapp { 
-    display: inline-block;
-    background-color: #e4a29f; 
-    color: white; 
-    padding: 15px 25px;
-    text-decoration: none; 
-    font-weight: bold; 
-    border-radius: 5px; 
-    }
+/* ==================== SEÇÃO TERAPIA ==================== */
+#terapia {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+#terapia h2 {
+  font-size: 1.5em;
+  color: #655274;
+  text-align: left;
+}
+#terapia ul {
+  list-style: none;
+  padding: 0;
+}
+#terapia li {
+  margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #655274;
+}
+#terapia li h3 {
+  display: inline-block;
+  font-weight: bold;
+  color: #655274;
+  margin-right: 5px;
+}
+#terapia li::before {
+  content: '— ';
+  color: #655274;
+  font-weight: bold;
+}
 
+/* ==================== SEÇÃO SINTOMAS ==================== */
+#sintomas h2 {
+  color: #655274;
+  text-align: center;
+}
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: 20px;
+  border: 2px solid #ecb8a3;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #655274;
+}
+.item p {
+  font-size: 0.9em;
+  color: #655274;
+}
+
+/* ==================== SEÇÃO SOBRE ==================== */
 section#sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
 }
-
 section#sobre div {
-    width: 50%;
+  width: 50%;
 }
-
 section#sobre h2 {
-    font-size: 1.5rem;
-    color: #655274;
-    margin-bottom: 8px;
-    letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #655274;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
 }
-
-section#sobre h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-}
-
 section#sobre p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #655274;
-    margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #655274;
+  margin-bottom: 15px;
 }
 
-.sobre-conteudo {
-    max-width: 50%;
-}
-
-.sobre-conteudo hr {
-    margin: 15px 0;
-    border: none;
-    border-top: 1px solid #ccc;
-}
-
-.sobre-imagem img {
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.sobre-imagem {
-    flex-shrink: 0;
-}
+/* ==================== SEÇÃO PSICOLOGIA HUMANISTA ==================== */
 .psih-section {
   background-color: #fffcf8;
   color: #655274;
   padding: 60px 20px;
 }
-
 .psih-content {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .psih-texto .subtitulo {
   letter-spacing: 4px;
   font-size: 14px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
 .psih-texto h2 {
   font-size: 28px;
   margin: 10px 0;
   line-height: 1.4;
 }
-
 .psih-texto .descricao {
   font-size: 14px;
   margin-top: 15px;
 }
-
 .psih-itens {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   gap: 30px;
 }
-
-.section {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.item {
-  flex: 1;
-  min-width: 250px;
-  max-width: 350px;
-}
-
 .item .numero {
   font-size: 100px;
   font-weight: bold;
@@ -360,79 +252,85 @@ section#sobre p {
   padding-top: 20px;
 }
 
-.item h3 {
-  font-size: 18px;
-  margin: 10px 0;
-  font-weight: 700;
+/* ==================== OUTRAS SEÇÕES ==================== */
+.section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
-.item p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Para dispositivos com largura menor que 768px (celulares) */
+/* ==================== RESPONSIVO ==================== */
 @media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+  #divlogo {
+    max-width: 100%;
+  }
+  #divnav {
+    width: 15%;
+  }
+  nav {
+    width: 20%;
+  }
+  #imglogo {
+    width: 200px;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+  nav ul.show {
+    max-height: 500px;
+    opacity: 1;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
   .lista {
     flex-direction: column;
     align-items: center;
   }
-  
   .item {
     max-width: 90%;
   }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  section#sobre {
-    padding: 1%;
-  }
-
-  section#sobre div {
-    width: 75%;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .hero h1 {
-    font-size: 1.5em;
+  .hero h1, .hero p {
+    font-size: 1.2em;
     text-align: center;
   }
-
-  .hero p {
-    font-size: 1em;
-    text-align: center;
-  }
-
   .btn-whatsapp {
     display: block;
     margin: 20px auto;
     padding: 12px 20px;
     font-size: 1em;
   }
-
-  .psih-content {
-    flex-direction: column;
-    align-items: center;
+  section#sobre {
+    padding: 1%;
   }
-
+  section#sobre div {
+    width: 75%;
+  }
   .psih-itens .item {
     max-width: 100%;
     margin-bottom: 20px;
-  }
-
-  .item {
-    flex: 1 1 100%;
-  }
-
-  #terapia h2, #terapia li {
-    text-align: left;
-    font-size: 1em;
   }
 }
