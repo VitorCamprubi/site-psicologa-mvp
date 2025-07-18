@@ -1,0 +1,47 @@
+/* ==================== SEÇÃO PSICOLOGIA HUMANISTA ==================== */
+.psih-section {
+  background-color: #fffcf8;
+  color: #655274;
+  padding: 60px 20px;
+}
+.psih-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.psih-texto .subtitulo {
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.psih-texto h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+.psih-texto .descricao {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.psih-itens {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+  justify-content: center;
+}
+.item .numero {
+  font-size: 100px;
+  font-weight: bold;
+  color: #655274;
+  opacity: 0.9;
+  border-top: 2px solid #655274;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .psih-itens .item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,47 @@
+/* ==================== HERO ==================== */
+.section-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffcf8;
+  gap: 20px;
+}
+.hero, .hero-img {
+  flex: 1 1 400px;
+}
+.hero {
+  padding: 50px;
+  text-align: center;
+  background-color: #fffcf8;
+}
+.hero h1,
+.hero p {
+  color: #655274;
+}
+.hero-img img {
+  width: 100%;
+  height: auto;
+}
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #e4a29f;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .hero h1, .hero p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .btn-whatsapp {
+        display: block;
+        margin: 20px auto;
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}

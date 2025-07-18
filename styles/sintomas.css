@@ -1,0 +1,86 @@
+/* ==================== SEÇÃO SINTOMAS ==================== */
+#sintomas h2 {
+  font-size: 1.5em;
+  color: #655274;
+  text-align: center;
+}
+#sintomas {
+  background-color: #fffcf8;
+  width: 80%;
+}
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+.item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: 20px;
+  border: 3px solid #ecb8a3;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #655274;
+}
+.item p {
+  font-size: 1.em;
+  color: #655274;
+}
+
+@media (max-width: 768px) {
+  .lista {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item {
+    max-width: 100%;
+  }
+#sintomas {
+  background-color: #fffcf8;
+  width: 100%;
+}
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+.item {
+  flex: 1 1 100px;
+  max-width: 300px;
+  padding: 20px;
+  border: 3px solid #ecb8a3;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #655274;
+}
+.item p {
+  font-size: 1.em;
+  color: #655274;
+}
+}

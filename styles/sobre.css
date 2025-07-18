@@ -1,0 +1,62 @@
+/* ==================== SEÇÃO SOBRE ==================== */
+section#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.sobre-cor {
+  background-color: #ffeaf2;
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+section#sobre h2 {
+  font-size: 1.5rem;
+  color: #655274;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+section#sobre p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #655274;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  section#sobre {
+    padding: 1%;
+  }
+  section#sobre div {
+    width: 100%;
+  }
+  section#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.sobre-cor {
+  background-color: #ffeaf2;
+  width: 100%;
+}
+section#sobre h2 {
+  font-size: 1.5rem;
+  color: #655274;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+section#sobre p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #655274;
+  margin-bottom: 15px;
+}
+}
