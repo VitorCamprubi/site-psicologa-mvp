@@ -12,3 +12,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('show');
     });
+    

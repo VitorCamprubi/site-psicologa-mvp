@@ -11,7 +11,18 @@
     <link rel="stylesheet" href="styles/sintomas.css">
     <link rel="stylesheet" href="styles/sobre.css">
     <link rel="stylesheet" href="styles/psicologia.css">
+    <link rel="stylesheet" href="styles/faq.css">
+
     <script src="js/script.js"></script>
+    <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+        });
+    });
+     </script>
+
 </head>
 <body>
     <header>
@@ -145,16 +156,50 @@
       </div>
     </div>
   </section>
-    <section id="perguntas" class="section">
-        <h2>Perguntas Frequentes</h2>
-        <p>Descrição dos serviços oferecidos.</p>
-    </section>
-    <section id="depoimentos" class="section">
-        <h2>Depoimentos</h2>
-        <p>Formulário de contato ou informações para agendamento.</p>
-    </section>
+  <section class="faq-section" id="faq">
+  <div class="faq-container">
+    <div class="faq-header">
+      <div class="icon">❓</div>
+      <p>F A Q</p>
+      <h2>Perguntas Frequentes</h2>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Quanto tempo dura a sessão de terapia?</button>
+      <div class="faq-answer">
+        <p>As sessões geralmente duram 50 minutos.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Você atende plano de saúde?</button>
+      <div class="faq-answer">
+        <p>Atendo por reembolso. Verifique com seu plano se há essa possibilidade.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Como funciona a terapia online?</button>
+      <div class="faq-answer">
+        <p>É realizada por videochamada, em um ambiente seguro e sigiloso.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Qual público atende?</button>
+      <div class="faq-answer">
+        <p>Atendo adultos e adolescentes acima de 16 anos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="depoimentos" class="section">
+    <h2>Depoimentos</h2>
+    <p>Formulário de contato ou informações para agendamento.</p>
+</section>
     <footer>
         <p>&copy; 2025 - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
+

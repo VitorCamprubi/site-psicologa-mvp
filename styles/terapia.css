@@ -2,13 +2,15 @@
 #terapia {
   max-width: 100%;
   margin: 0;
-  background-color: #ffeaf2;
+  background-color: #fffcf8;
 }
 .padding-cor {
-  background-color: #ffeaf2;
+  background-color: #fffcf8;
   padding-left: 25%;
   padding-right: 25%;
   width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 #terapia h2 {
   font-size: 1.5em;
@@ -39,7 +41,7 @@
 
 @media (max-width: 768px) {
 .padding-cor {
-  padding: 0;
+  padding: 5%;
 }
 .lista {
   flex-direction: column;

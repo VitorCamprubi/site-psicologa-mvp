@@ -13,6 +13,8 @@ section#sobre {
   width: 100%;
   padding-left: 30%;
   padding-right: 30%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 section#sobre h2 {
   font-size: 1.5rem;
@@ -46,6 +48,7 @@ section#sobre p {
 .sobre-cor {
   background-color: #ffeaf2;
   width: 100%;
+  padding: 12%;
 }
 section#sobre h2 {
   font-size: 1.5rem;
