@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   background-color: #fffcf8;
-  gap: 20px;
 }
 .hero, .hero-img {
   flex: 1 1 400px;
@@ -15,9 +14,13 @@
   text-align: center;
   background-color: #fffcf8;
 }
-.hero h1,
+.hero h1{
+  color: #655274;
+  font-size: 3.0em;
+}
 .hero p {
   color: #655274;
+  font-size: 1.2em;
 }
 .hero-img img {
   width: 100%;
@@ -34,8 +37,15 @@
 }
 
 @media (max-width: 768px) {
-    .hero h1, .hero p {
-        font-size: 1.2em;
+    .hero {
+      padding: 30px;
+    }
+    .hero h1 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+    .hero p {
+        font-size: 1.1em;
         text-align: center;
     }
     .btn-whatsapp {

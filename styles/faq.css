@@ -2,13 +2,13 @@
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #fffcf8;
 }
 
 .faq-container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
-  border: 1px solid #4d1f25;
+  border: 3px solid #ecb8a3;
   border-radius: 30px;
   padding: 2rem;
 }
@@ -20,18 +20,28 @@
 
 .faq-header .icon {
   font-size: 2rem;
-  color: #4d1f25;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #655274; /* mesmo tom vinho do site */
+  color: #fffcf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 10px auto;
 }
 
 .faq-header p {
   letter-spacing: 0.3em;
-  color: #4d1f25;
+  color: #655274;
   font-weight: 500;
 }
 
 .faq-header h2 {
   font-size: 1.8rem;
   margin: 0.5rem 0;
+  color: #655274;
 }
 
 .faq-item {
@@ -48,7 +58,7 @@
   font-size: 1rem;
   padding: 1rem 0;
   cursor: pointer;
-  color: #4d1f25;
+  color: #655274;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +68,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  color: #333;
+  color: #655274;
 }
 
 .faq-answer p {

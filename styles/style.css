@@ -15,10 +15,36 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+
 /* ==================== OUTRAS SEÇÕES ==================== */
 
 footer {
-  background-color: #333;
+  background-color: #655274;
   color: #fff;
   text-align: center;
   padding: 20px;

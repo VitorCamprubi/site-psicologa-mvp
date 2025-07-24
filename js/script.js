@@ -13,3 +13,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         navLinks.classList.toggle('show');
     });
     
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+});

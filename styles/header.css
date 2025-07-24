@@ -92,14 +92,22 @@ nav ul li a:focus::after {
   }
   nav ul {
     flex-direction: column;
+    position: absolute;
+    top: 70px; /* altura do header */
+    right: 0;
+    background-color: #fffcf8;
     width: 100%;
-    overflow: hidden;
     max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
     opacity: 0;
+    z-index: 999;
   }
+
   nav ul.show {
     max-height: 500px;
     opacity: 1;
+    padding: 10px 0;
   }
   nav ul li {
     width: 100%;

@@ -24,19 +24,14 @@
 #terapia li {
   margin: 30px 0;
   font-size: 1em;
-  line-height: .5;
+  line-height: 1.5;
   color: #655274;
 }
 #terapia li h3 {
   display: inline-block;
   font-weight: bold;
   color: #655274;
-  margin-right: 5px;
-}
-#terapia li::before {
-  content: '— ';
-  color: #655274;
-  font-weight: bold;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -70,12 +65,7 @@
   display: inline-block;
   font-weight: bold;
   color: #655274;
-  margin-right: 5px;
-}
-#terapia li::before {
-  content: '— ';
-  color: #655274;
-  font-weight: bold;
+  margin: 0;
 }
 
 }

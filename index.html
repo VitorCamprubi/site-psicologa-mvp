@@ -12,17 +12,11 @@
     <link rel="stylesheet" href="styles/sobre.css">
     <link rel="stylesheet" href="styles/psicologia.css">
     <link rel="stylesheet" href="styles/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <script src="js/script.js"></script>
-    <script>
-    document.querySelectorAll('.faq-question').forEach(button => {
-        button.addEventListener('click', () => {
-        const item = button.parentElement;
-        item.classList.toggle('active');
-        });
-    });
-     </script>
 
+    <script src="js/script.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -52,7 +46,7 @@
                 <h1>Transforme suas dores em crescimento.</h1>
                 <p>Como psicóloga humanista, ajudo adolescentes, adultos e idosos a enfrentar os desafios do presente, compreendendo como as vivências passadas influenciam suas emoções e comportamentos atuais. Juntos, trabalhamos para fortalecer habilidades que promovem o bem-estar no agora e auxiliam no enfrentamento da ansiedade em relação ao futuro.</p>
                 <p>Clique no botão abaixo para saber mais e cuidar da sua saúde emocional.</p>
-                <a class="btn-whatsapp" href="https://w.app/w5xytc" target="_blank">Agende sua consulta!</a>
+                <a class="btn-whatsapp" href="https://wa.me/5511959506086?text=Ol%C3%A1%20gostaria%20de%20marcar%20uma%20sess%C3%A3o" target="_blank">Agende sua consulta!</a>
             </div>
         </div>
         <div class="hero-img">
@@ -159,7 +153,7 @@
   <section class="faq-section" id="faq">
   <div class="faq-container">
     <div class="faq-header">
-      <div class="icon">❓</div>
+      <div class="icon"><i class="fas fa-question"></i></div>
       <p>F A Q</p>
       <h2>Perguntas Frequentes</h2>
     </div>
@@ -174,32 +168,43 @@
     <div class="faq-item">
       <button class="faq-question">Você atende plano de saúde?</button>
       <div class="faq-answer">
-        <p>Atendo por reembolso. Verifique com seu plano se há essa possibilidade.</p>
+        <p>Entre em contato comigo para verificarmos se o seu plano é atendido.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">Como funciona a terapia online?</button>
       <div class="faq-answer">
-        <p>É realizada por videochamada, em um ambiente seguro e sigiloso.</p>
+        <p>Após o agendamento e o comprovante de pagamento, eu enviarei um link para realizarmos a sessão online.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">Qual público atende?</button>
       <div class="faq-answer">
-        <p>Atendo adultos e adolescentes acima de 16 anos.</p>
+        <p>Atendo adolescentes a partir dos 14 anos, adultos e idosos.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Atua com palestras e grupos terapêuticos?</button>
+      <div class="faq-answer">
+        <p>Sim! Possuo um catálogo de palestras para organizações, institutos de saúde e afins. Atualmente, estou presente em 2 grupos terapêuticos. Para mais informações, entre em contato.</p>
       </div>
     </div>
   </div>
 </section>
-<section id="depoimentos" class="section">
-    <h2>Depoimentos</h2>
-    <p>Formulário de contato ou informações para agendamento.</p>
-</section>
     <footer>
         <p>&copy; 2025 - Todos os direitos reservados</p>
     </footer>
+    <a
+  href="https://wa.me/5511959506086?text=Ol%C3%A1%20gostaria%20de%20marcar%20uma%20sess%C3%A3o"
+  class="whatsapp-button"
+  target="_blank"
+  aria-label="Fale comigo no WhatsApp"
+>
+  <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" />
+</a>
 </body>
 </html>
 
