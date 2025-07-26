@@ -76,6 +76,7 @@ nav ul li a:focus::after {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 0;
 }
   #divlogo {
     max-width: 100%;
@@ -84,10 +85,10 @@ nav ul li a:focus::after {
     width: 15%;
   }
   nav {
-    width: 20%;
+    width: 0%;
   }
   #imglogo {
-    width: 200px;
+    width: 250px;
     height: auto;
   }
   nav ul {

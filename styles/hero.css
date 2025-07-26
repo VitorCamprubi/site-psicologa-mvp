@@ -5,12 +5,16 @@
   align-items: center;
   justify-content: center;
   background-color: #fffcf8;
+  gap: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.hero-img {
 }
 .hero, .hero-img {
   flex: 1 1 400px;
 }
 .hero {
-  padding: 50px;
   text-align: center;
   background-color: #fffcf8;
 }
@@ -21,6 +25,7 @@
 .hero p {
   color: #655274;
   font-size: 1.2em;
+  margin: 30px;
 }
 .hero-img img {
   width: 100%;
@@ -34,24 +39,34 @@
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  margin: 20px;
 }
 
 @media (max-width: 768px) {
+    .section-hero {
+      padding: 5%;
+      padding-top: 0;
+
+    }
     .hero {
-      padding: 30px;
+      padding: 0px;
     }
     .hero h1 {
-        font-size: 1.7em;
+        font-size: 2.0em;
         text-align: center;
+        margin-top: 10px;
     }
     .hero p {
         font-size: 1.1em;
         text-align: center;
+        margin: 20px;
     }
     .btn-whatsapp {
         display: block;
         margin: 20px auto;
         padding: 12px 20px;
         font-size: 1em;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
