@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: #fffcf8;
+  background-color: #F4F4F4;
   gap: 10%;
   padding-left: 20%;
   padding-right: 20%;
@@ -16,15 +16,18 @@
 }
 .hero {
   text-align: center;
-  background-color: #fffcf8;
+  background-color: #F4F4F4;
 }
 .hero h1{
-  color: #655274;
-  font-size: 3.0em;
+  color: #C48F94;
+  font-size: 2.0em;
+  font-family: 'Poppins', sans-serif;
+
 }
 .hero p {
-  color: #655274;
+  color: #4B4B4B;
   font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
   margin: 30px;
 }
 .hero-img img {
@@ -33,10 +36,11 @@
 }
 .btn-whatsapp {
   display: inline-block;
-  background-color: #e4a29f;
+  background-color: #C48F94;
   color: white;
   padding: 15px 25px;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   border-radius: 5px;
   margin: 20px;

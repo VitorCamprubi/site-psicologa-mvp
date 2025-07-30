@@ -1,7 +1,7 @@
 /* ==================== SEÇÃO PSICOLOGIA HUMANISTA ==================== */
 .psih-section {
-  background-color: #fffcf8;
-  color: #655274;
+  background-color: #F4F4F4;
+  color: #C48F94;
   padding: 60px 20px;
 }
 .psih-content {
@@ -10,17 +10,21 @@
 }
 .psih-texto .subtitulo {
   letter-spacing: 4px;
-  font-size: 14px;
+  font-size: 1.0em;
   margin-bottom: 10px;
+  color: #4B4B4B;
   text-transform: uppercase;
 }
 .psih-texto h2 {
-  font-size: 28px;
+  font-size: 2.0em;
+  font-family: 'Poppins', sans-serif;
   margin: 10px 0;
   line-height: 1.4;
 }
 .psih-texto .descricao {
-  font-size: 14px;
+  font-size: 1.2em;
+  color: #4B4B4B;
+  font-family: 'Poppins', sans-serif;
   margin-top: 15px;
 }
 .psih-itens {
@@ -30,12 +34,35 @@
   gap: 30px;
   justify-content: center;
 }
+.item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: 20px;
+  border: 3px solid #ecb8a3;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.item h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  color: #C48F94;
+}
+.item p {
+  font-size: 1.em;
+  color: #4B4B4B;
+  font-family: 'Poppins', sans-serif;
+}
 .item .numero {
   font-size: 100px;
   font-weight: bold;
-  color: #655274;
+  color: #C48F94;
   opacity: 0.9;
-  border-top: 2px solid #655274;
+  border-top: 2px solid #C48F94;
   padding-top: 20px;
 }
 
@@ -44,4 +71,23 @@
     max-width: 100%;
     margin-bottom: 20px;
   }
+  .psih-texto .subtitulo {
+  letter-spacing: 4px;
+  font-size: 1.0em;
+  margin-bottom: 10px;
+  color: #4B4B4B;
+  text-transform: uppercase;
+}
+.psih-texto h2 {
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+.psih-texto .descricao {
+  font-size: 1.0em;
+  color: #4B4B4B;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+}
 }

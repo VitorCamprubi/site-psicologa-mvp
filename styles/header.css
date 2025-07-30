@@ -1,6 +1,6 @@
 /* ==================== HEADER E NAVBAR ==================== */
 header {
-  background-color: #fffcf8;
+  background-color: #F4F4F4;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .navbar {
@@ -34,7 +34,7 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
-  color: #655274;
+  color: #C48F94;
 }
 nav ul {
   list-style: none;
@@ -44,7 +44,7 @@ nav ul {
 }
 nav a {
   text-decoration: none;
-  color: #655274;
+  color: #C48F94;
   font-weight: bold;
 }
 nav ul li a {
@@ -57,7 +57,7 @@ nav ul li a::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #655274;
+  background-color: #C48F94;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
@@ -96,7 +96,7 @@ nav ul li a:focus::after {
     position: absolute;
     top: 70px; /* altura do header */
     right: 0;
-    background-color: #fffcf8;
+    background-color: #F4F4F4;
     width: 100%;
     max-height: 0;
     overflow: hidden;

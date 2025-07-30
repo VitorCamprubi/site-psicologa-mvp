@@ -2,7 +2,7 @@
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
-  background-color: #fffcf8;
+  background-color: #F4F4F4;
 }
 
 .faq-container {
@@ -23,8 +23,8 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: #655274; /* mesmo tom vinho do site */
-  color: #fffcf8;
+  background-color: #C48F94; /* mesmo tom vinho do site */
+  color: #F4F4F4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,14 +34,16 @@
 
 .faq-header p {
   letter-spacing: 0.3em;
-  color: #655274;
+  color: #4B4B4B;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
 .faq-header h2 {
   font-size: 1.8rem;
   margin: 0.5rem 0;
-  color: #655274;
+  font-family: 'Poppins', sans-serif;
+  color: #C48F94;
 }
 
 .faq-item {
@@ -56,9 +58,10 @@
   text-align: left;
   font-weight: bold;
   font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
   padding: 1rem 0;
   cursor: pointer;
-  color: #655274;
+  color: #C48F94;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +71,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
-  color: #655274;
+  color: #4B4B4B;
 }
 
 .faq-answer p {
