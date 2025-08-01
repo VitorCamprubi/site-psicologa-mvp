@@ -57,6 +57,17 @@ section#sobre p {
   width: 500px;
   padding-right: 20%;
 }
+#btn2 {
+  display: inline-block;
+  background-color: #F4F4F4;
+  color: #C48F94;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 20px;
+}
 
 @media (max-width: 768px) {
   section#sobre {

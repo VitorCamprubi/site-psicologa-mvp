@@ -37,7 +37,7 @@
 .btn-whatsapp {
   display: inline-block;
   background-color: #C48F94;
-  color: white;
+  color: #F4F4F4;
   padding: 15px 25px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -70,7 +70,7 @@
         margin: 20px auto;
         padding: 12px 20px;
         font-size: 1em;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

@@ -65,6 +65,35 @@
   border-top: 2px solid #C48F94;
   padding-top: 20px;
 }
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.video-section h2 {
+  
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.video-wrapper iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: 1280px;
+  border-radius: 25px;
+}
+
 
 @media (max-width: 768px) {
   .psih-itens .item {
@@ -73,21 +102,41 @@
   }
   .psih-texto .subtitulo {
   letter-spacing: 4px;
-  font-size: 1.0em;
+  font-size: 0.8em;
   margin-bottom: 10px;
   color: #4B4B4B;
   text-transform: uppercase;
 }
 .psih-texto h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-family: 'Poppins', sans-serif;
   margin: 10px 0;
   line-height: 1.4;
 }
 .psih-texto .descricao {
-  font-size: 1.0em;
+  font-size: 1.0rem;
   color: #4B4B4B;
   font-family: 'Poppins', sans-serif;
   margin-top: 15px;
+}
+.video-section h2 {
+  
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.video-wrapper iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 640px;
+  border-radius: 25px;
+
 }
 }
