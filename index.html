@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
 
     <script src="js/script.js" defer></script>
     
@@ -39,8 +40,8 @@
                         <li><a href="#terapia">Terapia</a></li>
                         <li><a href="#sintomas">Sintomas</a></li>
                         <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
                         <li><a href="#faq">Perguntas Frequentes</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -114,7 +115,7 @@
             <h2>
                 Bianca Munhoz
                 <br>
-                Psicóloga CRP 06/165761
+                Psicóloga CRP <span class="crp">06/165761</span></p>
             </h2>
                 <br>
                 <p>Ola, sou a Bianca Munhoz, psicóloga formada desde 2019 e pós-graduada em Psicologia Organizacional e Psicologia Humanista. Tenho formações e extensões em áreas como Neuropsicologia Forense, Psicologia Educacional, Saúde Básica e atualmente curso Psicologia do Esporte. Tenho experiência em testes psicológicos, avaliacões, processos de T&D e psicoterapia clínica. Acredito na escuta humanizada, sem julgamentos, e no acolhimento como ponto de partida para o processo de transformação.</p>
@@ -160,7 +161,7 @@
   <div id="titulo-video">
     <h1>Como Funciona a Terapia Humanista?</h1>
   </div>
-  <section class="video">
+  <section class="video" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200">
     <div class="short-container">
       <iframe 
         src="https://www.youtube.com/embed/F6uQ7lItWZw?rel=0&modestbranding=1"
@@ -172,20 +173,22 @@
     <a class="btn-whatsapp" href="https://wa.me/5511959506086?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20uma%20consulta." target="_blank">Vamos juntos nessa? <i class="fab fa-whatsapp"></i></a>
   </div>
   <section id="testimonials">
-        <div id="testimonials_header">
+        <div id="testimonials_header" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1200">
             <h1>Avaliações</h1>
             <h2>
-                O que os clientes dizem
+                O que os pacientes dizem?
             </h2>
             <p>
-                Quer saber o que torna a nossa marca tão especial?
-                Confira o que nossos clientes têm a dizer!
+                A terapia traz grandes mudanças para sua vida. Quem passou comigo sabe!
             </p>
         </div>
 
-        <div class="swiper">
+        <div class="swiper" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                  <div class="author-estate">
+                    <p>— A.C.</p>
+                  </div>
                     <div class="testimonial-rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -195,23 +198,14 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
-						todas as informações de forma clara. Recomendo para todos!"
+                        "Sou acompanhada pela Bianca há alguns meses e só posso agradecer. A terapia tem me ajudado a me entender melhor e a lidar com situações que antes me paralisavam.”
                     </blockquote>
-
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="src/images/avatar1.jpg" alt="Imagem de uma pessoa">
-                        </div>
-
-                        <div class="author-info">
-                            <h3>Fulano de Tal</h3>
-                            <p>Cliente desde 2020</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="swiper-slide">
+                  <div class="author-estate">
+                    <p>— J.S.</p>
+                  </div>
                     <div class="testimonial-rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -221,23 +215,14 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
-						todas as informações de forma clara. Recomendo para todos!"
+                        “Cheguei na terapia me sentindo perdida e hoje consigo enxergar meus avanços com clareza. A Bianca tem um jeito muito humano e acolhedor de conduzir as sessões.”
                     </blockquote>
-
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="src/images/avatar2.jpg" alt="Imagem de uma pessoa">
-                        </div>
-
-                        <div class="author-info">
-                            <h3>Fulano de Tal</h3>
-                            <p>Cliente desde 2020</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="swiper-slide">
+                  <div class="author-estate">
+                    <p>— L.R.</p>
+                  </div>
                     <div class="testimonial-rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -247,23 +232,14 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
-						todas as informações de forma clara. Recomendo para todos!"
+                        "Não imaginava o quanto o processo terapêutico poderia me fazer tão bem. Ter esse espaço com a Bianca tem sido um dos melhores investimentos que fiz por mim.”
                     </blockquote>
-
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="src/images/avatar3.jpg" alt="Imagem de uma pessoa">
-                        </div>
-
-                        <div class="author-info">
-                            <h3>Fulano de Tal</h3>
-                            <p>Cliente desde 2020</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="swiper-slide">
+                  <div class="author-estate">
+                    <p>— K.S.</p>
+                  </div>
                     <div class="testimonial-rate">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -273,20 +249,8 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
-						todas as informações de forma clara. Recomendo para todos!"
+                        “Ter esse tempo comigo mesma com o apoio da Bianca tem feito toda a diferença. Me sinto mais leve, mais centrada, mais eu.”
                     </blockquote>
-
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="src/images/avatar1.jpg" alt="Imagem de uma pessoa">
-                        </div>
-
-                        <div class="author-info">
-                            <h3>Fulano de Tal</h3>
-                            <p>Cliente desde 2020</p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -366,7 +330,7 @@
     once: true // anima apenas uma vez
   });
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
 

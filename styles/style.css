@@ -6,13 +6,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  
   margin: 0;
   padding: 0;
   background-color: #F4F4F4;
 }
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  
 }
 
 .whatsapp-button {

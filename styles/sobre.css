@@ -68,6 +68,11 @@ section#sobre p {
   border-radius: 5px;
   margin: 20px;
 }
+.crp {
+  color: #F4F4F4;
+  text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
   section#sobre {
